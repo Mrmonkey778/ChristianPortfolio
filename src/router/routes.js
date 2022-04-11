@@ -18,6 +18,26 @@ const routes = [
         component: () => import('pages/ZygonPage.vue')
       },
       {
+        path: '/fvjiwara',
+        component: () => import('pages/FvjiPage.vue')
+      },
+      {
+        path: '/corn',
+        component: () => import('pages/CornPage.vue')
+      },
+      {
+        path: '/massivetrackz',
+        component: () => import('pages/MassiveTrackzPage.vue')
+      },
+      {
+        path: '/leelodubz',
+        component: () => import('pages/LeeloDubzPage.vue')
+      },
+      {
+        path: '/transitions',
+        component: () => import('pages/TransitionsPage.vue')
+      },
+      {
         path: '/about',
         component: () => import('pages/AboutPage.vue')
       }

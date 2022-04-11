@@ -10,9 +10,8 @@
       <template v-slot:sign-in-header>
         <h3>Enter if you dare</h3>
       </template>
+    </authenticator>
   </q-page>
-
-  </authenticator>
 
 </template>
 

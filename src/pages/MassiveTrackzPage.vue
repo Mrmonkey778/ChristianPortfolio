@@ -1,20 +1,9 @@
 <template>
   <q-page padding class="flex flex-center">
-  <button style="position: absolute; right: 15px">
-    tag
-  </button>
+    <h1>Massive Trackz</h1>
 
-  <input v-model="message"
-         @keyup.esc="clearInput"
-         @keyup.enter="submit"
-         @mouseenter="inputCheckIn"
-         @mouseleave="inputCheckOut" />
-  <button @click="submit">Submit</button>
-  <h5 class="border-login"
-      v-show="!message.length">
-    Input Required
-  </h5>
-</q-page>
+  </q-page>
+  
 </template>
 
 <script>

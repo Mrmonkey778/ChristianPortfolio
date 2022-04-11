@@ -24,7 +24,8 @@
       <q-tabs v-model="tab"
               dense
               class="bg-grey-3 text-grey-7"
-              align="justify">
+              align="justify"
+              >
 
         <q-btn flat
                dense
@@ -39,7 +40,7 @@
                 active-color="primary">
           <q-route-tab name="home" to="/" label="Home" />
           <q-item-section avatar
-                          width="40">
+                          width="30">
             <q-icon name="home" />
           </q-item-section>
         </q-item>
@@ -51,7 +52,7 @@
 
           <q-route-tab name="about" to="/about" label="about us" />
           <q-item-section avatar
-                          width="40">
+                          width="10">
             <q-icon name="groups" />
           </q-item-section>
         </q-item>
@@ -68,10 +69,10 @@
         </q-item>
 
         <q-item clickable
-                to="/fvji"
+                to="/fvjiwara"
                 dense
                 active-color="primary">
-          <q-route-tab name="fvji" to="/fvji" label="fvjiwara" />
+          <q-route-tab name="fvjiwara" to="/fvjiwara" label="fvjiwara" />
           <q-item-section avatar
                           width="40">
             <q-icon name="person_outline" />
@@ -83,6 +84,39 @@
                 dense
                 active-color="primary">
           <q-route-tab name="corn" to="/corn" label="corn" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="person_outline" />
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable
+                to="/massivetrackz"
+                dense
+                active-color="primary">
+          <q-route-tab name="massivetrackz" to="/massivetrackz" label="massive trackz" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="person_outline" />
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable
+                to="/leelodubz"
+                dense
+                active-color="primary">
+          <q-route-tab name="leelodubz" to="/leelodubz" label="leelo dubz" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="person_outline" />
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable
+                to="/transitions"
+                dense
+                active-color="primary">
+          <q-route-tab name="transitions" to="/transitions" label="transitions" />
           <q-item-section avatar
                           width="40">
             <q-icon name="person_outline" />
