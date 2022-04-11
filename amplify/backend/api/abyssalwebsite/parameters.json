@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "abyssalwebsite",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authabyssalwebsite63a681ef",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

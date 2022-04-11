@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "abyssalwebsite",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\Christian\\AbyssalFrontend\\AbyssalDeploy\\quasar-project\\amplify\\backend\\api\\abyssalwebsite\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authabyssalwebsite63a681ef"
+    }
+  }
+}

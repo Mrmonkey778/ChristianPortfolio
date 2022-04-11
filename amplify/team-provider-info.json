@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-abyssalwebsite-dev-234016-authRole",
+      "UnauthRoleArn": "arn:aws:iam::364875609101:role/amplify-abyssalwebsite-dev-234016-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::364875609101:role/amplify-abyssalwebsite-dev-234016-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-abyssalwebsite-dev-234016-deployment",
+      "UnauthRoleName": "amplify-abyssalwebsite-dev-234016-unauthRole",
+      "StackName": "amplify-abyssalwebsite-dev-234016",
+      "StackId": "arn:aws:cloudformation:us-west-2:364875609101:stack/amplify-abyssalwebsite-dev-234016/dfb9dad0-b959-11ec-9681-0ab4a8341231",
+      "AmplifyAppId": "dk783cuky02ez"
+    },
+    "categories": {
+      "auth": {
+        "abyssalwebsite63a681ef": {}
+      }
+    }
+  }
+}
