@@ -24,7 +24,8 @@
       <q-tabs v-model="tab"
               dense
               class="bg-grey-3 text-grey-7"
-              align="justify"
+              align="left"
+              shrink
               >
 
         <q-btn flat
@@ -152,9 +153,12 @@
           Abyssal Cartel
         </q-toolbar-title>
 
-        <button @click="$router.replace('/signup')" style="position: absolute; right: 15px">
-        Login or Signup
-        </button>
+        
+          <button @click="$router.replace('/signup')" style="position: absolute; right: 15px">
+            Login or Signup
+          </button>
+          
+        
 
         <div></div>
       </q-toolbar>
@@ -191,32 +195,32 @@
   const linksList = [
     {
       title: 'Soundcloud',
-      caption: 'BANGERS',
+      caption: 'Abyssal Cartel',
       icon: 'speaker',
       link: 'https://soundcloud.com/you/library'
     },
     {
       title: 'Instagram',
-      caption: 'BANGERS',
-      icon: 'speaker',
+      caption: 'Abyssal_Cartel',
+      icon: 'share',
       link: 'https://www.instagram.com/abyssal_cartel/'
     },
     {
-      title: 'Facebook',
-      caption: 'BANGERS',
-      icon: 'speaker',
+      title: 'Twitter',
+      caption: '@AbyssalCartel',
+      icon: 'tag',
       link: 'https://www.facebook.com/'
     },
     {
-      title: 'Soundcloud',
-      caption: 'BANGERS',
-      icon: 'speaker',
-      link: 'https://soundcloud.com/you/library'
+      title: 'Facebook',
+      caption: 'Abyssal Cartel',
+      icon: 'mediation',
+      link: 'https://www.facebook.com/AbyssalCartel'
     },
     {
       title: 'Github',
-      caption: 'code',
-      icon: 'home',
+      caption: 'Christian\'s Code',
+      icon: 'code',
       link: 'https://github.com/Mrmonkey778'
     }
   ]
