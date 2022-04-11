@@ -1,16 +1,17 @@
 
 <template>
-  
-  <authenticator >
-    <template v-slot="{ user, signOut }">
-      <h1>Welcome to the Abyss {{user.attributes.name}}!</h1>
-      <button @click="signOut">Sign Out</button>
-    </template>
+  <q-page class="flex flex-center">
+    <authenticator>
+      <template v-slot="{ user, signOut }">
+        <h1>Welcome to the Abyss {{user.attributes.name}}!</h1>
+        <button @click="signOut">Sign Out</button>
+      </template>
 
       <template v-slot:sign-in-header>
         <h3>Enter if you dare</h3>
       </template>
-    
+  </q-page>
+
   </authenticator>
 
 </template>

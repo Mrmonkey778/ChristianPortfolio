@@ -35,8 +35,8 @@
           Abyssal Cartel
         </q-toolbar-title>
 
-        <button @click="$router.replace('/signup')" style="position: absolute; right: 15px" >
-          test
+        <button @click="$router.replace('/')" style="position: absolute; right: 15px" >
+          Home
         </button>
 
         <div></div>
