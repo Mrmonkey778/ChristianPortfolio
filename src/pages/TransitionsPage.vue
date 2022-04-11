@@ -1,9 +1,6 @@
 <template>
   <q-page padding class="flex flex-center">
-
       <h1>Transitions</h1>
-
-
   </q-page>
   
 </template>
