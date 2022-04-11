@@ -11,6 +11,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@aws-amplify/ui-vue": "^2.3.8",
     "@quasar/extras": "^1.0.0",
     "aws-amplify": "^4.3.19",
     "aws-amplify-vue": "^2.1.5",
