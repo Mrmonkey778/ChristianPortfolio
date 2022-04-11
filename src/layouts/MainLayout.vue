@@ -1,43 +1,148 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+  <q-layout view="hHh LpR lFf"
+            class="vertical-center ">
+    <q-header elevated class="glossy">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-btn flat
+               dense
+               round
+               icon="menu"
+               aria-label="Menu"
+               @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
-          Quasar App
+          Abyssal Cartel
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Welcome to the Abyss</div>
+      </q-toolbar>
+
+
+
+
+
+      <q-tabs v-model="tab"
+              dense
+              class="bg-grey-3 text-grey-7"
+              align="justify">
+
+        <q-btn flat
+               dense
+               round
+               @click="leftDrawerOpen = !leftDrawerOpen"
+               aria-label="Menu"
+               icon="menu" />
+
+        <q-item clickable
+                to="/"
+                dense
+                active-color="primary">
+          <q-route-tab name="home" to="/" label="Home" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="home" />
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable
+                to="/about"
+                dense
+                active-color="primary">
+
+          <q-route-tab name="about" to="/about" label="about us" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="groups" />
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable
+                to="/zygon"
+                dense
+                active-color="primary">
+          <q-route-tab name="zygon" to="/zygon" label="Zygon" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="person_outline" />
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable
+                to="/fvji"
+                dense
+                active-color="primary">
+          <q-route-tab name="fvji" to="/fvji" label="fvjiwara" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="person_outline" />
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable
+                to="/corn"
+                dense
+                active-color="primary">
+          <q-route-tab name="corn" to="/corn" label="corn" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="person_outline" />
+          </q-item-section>
+        </q-item>
+
+
+
+        <q-item clickable
+                to="/downloads"
+                dense
+                active-color="primary">
+          <q-route-tab name="downloads" to="/downloads" label="downloads" />
+          <q-item-section avatar
+                          width="40">
+            <q-icon name="files_download"
+                    width="40" />
+          </q-item-section>
+        </q-item>
+
+
+      </q-tabs>
+
+
+
+
+    </q-header>
+    <q-header elevated class="glossy">
+      <q-toolbar>
+
+
+        <q-toolbar-title>
+          Abyssal Cartel
+        </q-toolbar-title>
+
+        <button @click="$router.replace('/signup')" style="position: absolute; right: 15px">
+          test
+        </button>
+
+        <div></div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
+    <q-drawer v-model="leftDrawerOpen"
+              show-if-above
+              bordered
+              width=175
+              class="bg-grey-2">
       <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
+        <q-item-label header>Outside Links</q-item-label>
 
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+
+
+        <EssentialLink v-for="link in essentialLinks"
+                       :key="link.title"
+                       v-bind="link" />
+
       </q-list>
     </q-drawer>
+
 
     <q-page-container>
       <router-view />
@@ -46,71 +151,59 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
+  import { defineComponent, ref } from 'vue'
+  import EssentialLink from '../components/EssentialLink.vue'
 
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-]
+  const linksList = [
+    {
+      title: 'Soundcloud',
+      caption: 'BANGERS',
+      icon: 'speaker',
+      link: 'https://soundcloud.com/you/library'
+    },
+    {
+      title: 'Instagram',
+      caption: 'BANGERS',
+      icon: 'speaker',
+      link: 'https://www.instagram.com/abyssal_cartel/'
+    },
+    {
+      title: 'Facebook',
+      caption: 'BANGERS',
+      icon: 'speaker',
+      link: 'https://www.facebook.com/'
+    },
+    {
+      title: 'Soundcloud',
+      caption: 'BANGERS',
+      icon: 'speaker',
+      link: 'https://soundcloud.com/you/library'
+    },
+    {
+      title: 'Github',
+      caption: 'code',
+      icon: 'home',
+      link: 'https://github.com/Mrmonkey778'
+    }
+  ]
 
-export default defineComponent({
-  name: 'MainLayout',
+  export default defineComponent({
+    name: 'MainLayout',
 
-  components: {
-    EssentialLink
-  },
+    components: {
+      EssentialLink
+    },
 
-  setup () {
-    const leftDrawerOpen = ref(false)
+    setup() {
+      const leftDrawerOpen = ref(false)
 
-    return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
+      return {
+        essentialLinks: linksList,
+        leftDrawerOpen,
+        toggleLeftDrawer() {
+          leftDrawerOpen.value = !leftDrawerOpen.value
+        }
       }
     }
-  }
-})
+  })
 </script>
