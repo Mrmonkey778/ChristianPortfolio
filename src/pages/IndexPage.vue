@@ -2,8 +2,8 @@
   <q-page class="flex flex-center">
     <img
       alt="AC logo"
-      src="~assets/logo.png"
-      style="width: 200px; height: 200px"
+      src="~assets/ResurrectionFlyerWide.jpg"
+      style="width: 1422px; height: 800px"
     >
     <p></p>
     <h2>hello world</h2>
