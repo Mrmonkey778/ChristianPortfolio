@@ -11,10 +11,10 @@
                @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
-          Abyssal Cartel
+          Hire Christian Alexander
         </q-toolbar-title>
 
-        <div>Welcome to the Abyss</div>
+        <div>Hire Christian Alexander</div>
       </q-toolbar>
 
 
@@ -25,8 +25,7 @@
               dense
               class="bg-grey-3 text-grey-7"
               align="left"
-              shrink
-              >
+              shrink>
 
         <q-btn flat
                dense
@@ -51,7 +50,7 @@
                 dense
                 active-color="primary">
 
-          <q-route-tab name="about" to="/about" label="about us" />
+          <q-route-tab name="about" to="/about" label="about me" />
           <q-item-section avatar
                           width="10">
             <q-icon name="groups" />
@@ -59,72 +58,40 @@
         </q-item>
 
         <q-item clickable
-                to="/zygon"
+                to="/projects"
                 dense
                 active-color="primary">
-          <q-route-tab name="zygon" to="/zygon" label="Zygon" />
+          <q-route-tab name="projects" to="/projects" label="projects" />
           <q-item-section avatar
-                          width="40">
-            <q-icon name="person_outline" />
+                          width="10">
+            <q-icon name="files_download"
+                    width="10" />
           </q-item-section>
         </q-item>
 
         <q-item clickable
-                to="/fvjiwara"
+                to="/resume"
                 dense
                 active-color="primary">
-          <q-route-tab name="fvjiwara" to="/fvjiwara" label="fvjiwara" />
+          <q-route-tab name="resume" to="/resume" label="resume" />
           <q-item-section avatar
-                          width="40">
-            <q-icon name="person_outline" />
+                          width="10">
+            <q-icon name="files_download"
+                    width="10" />
           </q-item-section>
         </q-item>
 
         <q-item clickable
-                to="/corn"
+                to="/projects"
                 dense
                 active-color="primary">
-          <q-route-tab name="corn" to="/corn" label="corn" />
+          <q-route-tab name="cover letter" to="/cover letter" label="cover letter" />
           <q-item-section avatar
-                          width="40">
-            <q-icon name="person_outline" />
+                          width="10">
+            <q-icon name="files_download"
+                    width="10" />
           </q-item-section>
         </q-item>
-
-        <q-item clickable
-                to="/massivetrackz"
-                dense
-                active-color="primary">
-          <q-route-tab name="massivetrackz" to="/massivetrackz" label="massive trackz" />
-          <q-item-section avatar
-                          width="40">
-            <q-icon name="person_outline" />
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable
-                to="/leelodubz"
-                dense
-                active-color="primary">
-          <q-route-tab name="leelodubz" to="/leelodubz" label="leelo dubz" />
-          <q-item-section avatar
-                          width="40">
-            <q-icon name="person_outline" />
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable
-                to="/transitions"
-                dense
-                active-color="primary">
-          <q-route-tab name="transitions" to="/transitions" label="transitions" />
-          <q-item-section avatar
-                          width="40">
-            <q-icon name="person_outline" />
-          </q-item-section>
-        </q-item>
-
-
 
         <q-item clickable
                 to="/downloads"
@@ -132,9 +99,9 @@
                 active-color="primary">
           <q-route-tab name="downloads" to="/downloads" label="downloads" />
           <q-item-section avatar
-                          width="40">
+                          width="10">
             <q-icon name="files_download"
-                    width="40" />
+                    width="10" />
           </q-item-section>
         </q-item>
 
@@ -150,7 +117,7 @@
 
 
         <q-toolbar-title>
-          Abyssal Cartel
+          Hire Christian Alexander
         </q-toolbar-title>
 
         
@@ -194,13 +161,7 @@
 
   const linksList = [
     {
-      title: 'Soundcloud',
-      caption: 'Abyssal Cartel',
-      icon: 'speaker',
-      link: 'https://soundcloud.com/you/library'
-    },
-    {
-      title: 'Instagram',
+      title: 'Linked In',
       caption: 'Abyssal_Cartel',
       icon: 'share',
       link: 'https://www.instagram.com/abyssal_cartel/'

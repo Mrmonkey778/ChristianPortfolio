@@ -1,12 +1,12 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="AC logo"
-      src="~assets/ResurrectionFlyerWide.jpg"
-      style="width: 1422px; height: 800px"
-    >
+
+
     <p></p>
-    <h2>hello world</h2>
+    <h2>Welcome to Christian Alexanders website resume</h2>
+    <h2>This has all been developed by Christian Alexander using a Quasar framework. It has been deployed with aws amplify for continuious integration. Quasar itself uses Vue framework to build .Vue files which utilize a 3 part structure.
+    The first part is ...
+    </h2>
   </q-page>
 </template>
 
